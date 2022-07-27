@@ -20,4 +20,4 @@ const Greet = (props) =>{
 //export const Greet = () => <h1>Hello Mrunmayee</h1> // named export
 
 
-export default Greet // default export
+export default Greet; // default export

@@ -3,24 +3,26 @@ import './Card.css';
 
 
 function Card(props) {
+    let {title,description,urlToImage,Author,Readmore,date,content} = props;
     return (
         <div className='card'>
             <div className="body">
-                <img src={props.img} />
-                <h2 className="title"> {props.title}</h2>
+                <img src={urlToImage} />
+                <h2 className="title"> {title}</h2>
                 <p className="description">
-                   {props.desc}
+                   {description}
                 </p>
+                <p className="author"> By author {Author} {date} </p>
                 </div>
                 <div className="btn">
                 <button>
-                    <a>
-                    Read More
+                    <a href={Readmore} target="blank">
+                    Read More 
                     </a>
                 </button>
                 </div>
         </div>
-    )
+    );
 }
 
-export default Card
+export default Card;
